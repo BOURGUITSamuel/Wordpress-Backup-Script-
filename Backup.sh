@@ -3,6 +3,7 @@
 #### Settings ####
 NOW=$(date +"%Y-%m-%d-%H%M")
 BACKUP_FOLDER=/backup/
+RETENTION=4
 
 #### Site-specific Info ####
 SITE_PATH="/var/www/html/wordpress/" #Could also be subsites/subsitename
@@ -10,9 +11,6 @@ DB_NAME=`cat /var/www/html/wordpress/wp-config.php | grep DB_NAME | cut -d \' -f
 DB_USER=`cat /var/www/html/wordpress/wp-config.php | grep DB_USER | cut -d \' -f 4`
 DB_PASS=`cat /var/www/html/wordpress/wp-config.php | grep DB_PASSWORD | cut -d \' -f 4`
 DB_HOST=`cat /var/www/html/wordpress/wp-config.php | grep DB_HOST | cut -d \' -f 4`
-
-#### Retention ####
-RETENTION=4
 
 #### Files backup ####
 function files_backup {
