@@ -3,7 +3,7 @@
 #### Settings ####
 NOW=$(date +"%Y-%m-%d-%H%M")
 BACKUP_FOLDER=/backup/
-RETENTION=4
+RETENTION=7
 
 #### Site-specific Info ####
 SITE_PATH="/var/www/html/wordpress/" #Could also be subsites/subsitename
@@ -14,8 +14,7 @@ DB_HOST=`cat /var/www/html/wordpress/wp-config.php | grep DB_HOST | cut -d \' -f
 
 #### Files backup ####
 function files_backup {
-sudo zip -r $SITE_PATH$NOW.zip $SITE_PATH
-sudo mv $SITE_PATH$NOW.zip $BACKUP_FOLDER
+sudo tar -cvf /backup/$NOW.tar.gz $SITE_PATH $SITE_CONF 
 }
 
 #### Database Backup ####
@@ -26,7 +25,7 @@ sudo mv $DB_NAME.$NOW.sql $BACKUP_FOLDER/$DB_NAME.$NOW.sql
 
 #### Scp Transfert ####
 function scp_transfert {
-sudo scp $BACKUP_FOLDER/*.zip root@ftpserver:/backup/
+sudo scp $BACKUP_FOLDER/*.tar.gz root@ftpserver:/backup/
 sudo scp $BACKUP_FOLDER/*.sql root@ftpserver:/backup/
 }
 
