@@ -34,7 +34,7 @@ sudo scp $BACKUP_FOLDER$DB_NAME.$NOW.sql root@ftpserver:/backup/
 
 #### Delete old data with retention option ####
 function retention {	
-find $BACKUP_FOLDER/* -mtime +$RETENTION -delete
+sudo ssh root@ftpserver "find /backup/ -mtime +$RETENTION -delete"
 }
 
 #### Runner Class ####
