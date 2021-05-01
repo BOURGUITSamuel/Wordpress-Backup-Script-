@@ -14,7 +14,7 @@ Le programme a été conçu avec le langage Shell
 
 ## Installing & Using
 
-1- Copiez les fichiers dans le répertoire de votre choix
+1- Copiez le fichier dans le répertoire de votre choix
 
 2- Lancez le programme avec la commande suivante : "./Backup.sh"
 
