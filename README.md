@@ -2,7 +2,7 @@
 
 # Backup.sh
 
-Script de sauvegarde Wordpress via transfert scp 
+Script de sauvegarde Wordpress via transfert scp et rotation des sauvegardes
 
 ## Getting Started
 
