@@ -1,14 +1,16 @@
 # Wordpress-Backup-Script
 
 # Backup.sh
+
 Script de sauvegarde Wordpress via transfert scp 
 
 ## Getting Started
+
 Vous pouvez par exemple utiliser ce programme pour la sauvegarde de données vers votre serveur de fichiers 
 
 ### Prerequisites
 
-Le programme peut être exécuté  sur un système d'exploitation Windows ou Linux.
+L'utilisation du programme nécessite l'acquisition d'un système d'exploitation Linux
 
 Le programme a été conçu avec le langage Shell 
 
