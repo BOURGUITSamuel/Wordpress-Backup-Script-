@@ -12,7 +12,7 @@ Vous pouvez par exemple utiliser ce programme pour la sauvegarde de données ver
 
 L'utilisation du programme nécessite l'acquisition d'un système d'exploitation Linux
 
-Le programme a été conçu avec le langage Shell 
+Le programme a été conçu avec le language Shell 
 
 ## Installing & Using
 
