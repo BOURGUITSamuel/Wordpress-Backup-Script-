@@ -18,7 +18,7 @@ Le programme a été conçu avec le language Shell
 
 1- Copiez le fichier dans le répertoire de votre choix
 
-2- Lancez le programme avec la commande suivante : "./Backup.sh"
+2- Lancer le programme avec la commande suivante : "./Backup.sh"
 
 3- Vous pouvez appliquer vos propres paramètres en modifiant le script
 
