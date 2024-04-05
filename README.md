@@ -34,7 +34,7 @@ Version 1.0
 
 Jean - Samuel BOURGUIT 
 
-Etudiant OpenClassrooms , parcours AIC (Administrateur Infrastuture et Cloud)
+Etudiant Doranco , parcours AIC (Administrateur Infrastuture et Cloud)
 
 ## License
     Apache License
